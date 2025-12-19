@@ -1,3 +1,8 @@
+
+# ✔ Prevents silent failures
+# ✔ Production-safe
+# ✔ CI-friendly
+
 # src/utils/validation.py
 
 

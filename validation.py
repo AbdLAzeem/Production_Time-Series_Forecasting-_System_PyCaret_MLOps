@@ -1,22 +1,11 @@
+# Deprecated: validation.py moved to src/utils/validation.py
+# This stub keeps backward compatibility for a short transition period.
+import warnings
+from src.utils.validation import validate_timeseries  # re-export
 
-# ✔ Prevents silent failures
-# ✔ Production-safe
-# ✔ CI-friendly
-
-# src/utils/validation.py
-
-
-import pandas as pd
-
-def validate_timeseries(df: pd.DataFrame):
-    if not isinstance(df.index, pd.DatetimeIndex):
-        raise ValueError("Index must be a DatetimeIndex")
-
-    if df.isnull().sum().sum() > 0:
-        raise ValueError("Missing values detected in time series")
-
-    if df.index.is_monotonic_increasing is False:
-        raise ValueError("Datetime index must be sorted")
-
-    if df.shape[0] < 30:
-        raise ValueError("Insufficient data points for forecasting")
+warnings.warn(
+    "validation.py at the repository root is deprecated and will be removed. "
+    "Please import from src.utils.validation instead.",
+    DeprecationWarning,
+    stacklevel=2,
+)

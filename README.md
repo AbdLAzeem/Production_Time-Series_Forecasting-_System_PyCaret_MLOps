@@ -48,13 +48,21 @@ A reproducible, auditable, and deployable forecasting baseline suitable for batc
 
 # Project Files:
 1- train.py — production training pipeline
+
 2- predict.py — batch forecasting
+
 3- validation.py - Data validation checks (critical)
+
 4- evaluation.py - Forecast error monitoring (drift detection)
+
 5- ci.yml - Forecasting CI: CI checks (GitHub Actions)
+
 6- app.py - FastAPI inference service (online forecasting)
+
 7- forecast_pipeline.py - Airflow DAG (scheduled retraining + forecasting)
+
 8- drift_dashboard.py - Drift dashboards (forecast error monitoring) 
+
 9- Dockerfile - Dockerization (full system)
 
 # Final enterprise-grade architecture

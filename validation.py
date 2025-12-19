@@ -1,5 +1,6 @@
 # src/utils/validation.py
 
+
 import pandas as pd
 
 def validate_timeseries(df: pd.DataFrame):

@@ -2,26 +2,26 @@
 
 Designed and implemented a production-ready time series forecasting pipeline covering the full ML lifecycle — from experimentation to deployment readiness.
 
-# Key contributions:
+# Contributions:
 
-Built an end-to-end forecasting workflow using PyCaret with fair model benchmarking (ARIMA, ETS, Theta, baselines)
+1- Built an end-to-end forecasting workflow using PyCaret with fair model benchmarking (ARIMA, ETS, Theta, baselines)
 
-Converted research notebook into production pipelines (train.py, predict.py)
+2- Converted research notebook into production pipelines (train.py, predict.py)
 
-Implemented strict data validation checks to prevent silent failures
+3- Implemented strict data validation checks to prevent silent failures
 
-Added forecast error monitoring and drift detection logic
+4- Added forecast error monitoring and drift detection logic
 
-Integrated MLflow-ready experiment tracking and model versioning
+5- Integrated MLflow-ready experiment tracking and model versioning
 
-Designed CI pipelines (GitHub Actions) to enforce data and code quality
+6- Designed CI pipelines (GitHub Actions) to enforce data and code quality
 
-Structured the repository following industry MLOps best practices
+7- Structured the repository following industry MLOps best practices
 
-Technologies:
+# Technologies:
 Python, PyCaret, MLflow, Pandas, GitHub Actions, Time Series Forecasting
 
-Outcome:
+# Outcome:
 A reproducible, auditable, and deployable forecasting baseline suitable for batch or API-based production systems.
 
 # production structure:

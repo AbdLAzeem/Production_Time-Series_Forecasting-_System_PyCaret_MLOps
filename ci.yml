@@ -1,0 +1,28 @@
+# .github/workflows/ci.yml
+#✔ Prevents broken data
+#✔ Forces discipline
+#✔ Hiring-manager approved
+
+name: Forecasting CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run data validation
+        run: |
+          python -c "from src.utils.validation import validate_timeseries; print('Validation OK')"

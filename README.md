@@ -6,7 +6,7 @@
 [![API](https://img.shields.io/badge/Inference-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF.svg)](https://github.com/features/actions)
 
-A production-ready, end-to-end time series forecasting pipeline covering the entire machine learning lifecycle—from automated model experimentation to orchestration, deployment, and live monitoring. 
+A production-ready, end-to-end time series forecasting pipeline covering the entire machine learning lifecycle, from automated model experimentation to orchestration, deployment, and live monitoring. 
 
 This system bridges the gap between research notebooks and enterprise-grade deployment, providing a reproducible, auditable, and robust baseline suitable for batch or API-based production systems.
 
